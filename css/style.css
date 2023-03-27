@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.form-bg-image {
+    background: url(../images/form-bg-image.png);
+}
+
+.bg-creme-color {
+    background-color: #F9F6EE;
+}
+
+.blue-color {
+    background-color: #0a205c;
+}
+
+.hello-new-you-bg-image {
+    background: url(../images/hello-new-you-pic-bg.webp) no-repeat;
+    background-size: cover;
+}
