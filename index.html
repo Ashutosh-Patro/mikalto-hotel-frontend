@@ -24,14 +24,20 @@
             <button class="hidden mr-5 mt-3" id="cross-button" onclick="removeDropdown()"><i
                     class="fa-solid fa-xmark"></i></button>
         </div>
-        <ul class="flex sm:flex-row gap-5 hidden sm:flex flex-col sm:justify-center items-center w-full absolute top-[15%] bg-white bg-transparent sm:static"
+        <ul class="flex sm:flex-row gap-5 hidden sm:flex flex-col sm:justify-center items-center w-full absolute top-[100px] bg-white bg-transparent sm:static"
             id="nav-item-list-left">
-            <li class="text-cyan-800"><a href="#" target="_blank">Home</a></li>
-            <li class="text-cyan-800"><a href=" #" target="_blank">Our Rooms</a></li>
-            <li class="text-cyan-800"><a href=" #" target="_blank">Page</a></li>
-            <li class="text-cyan-800"><a href=" #" target="_blank">Features</a></li>
-            <li class="text-cyan-800"><a href=" #" target="_blank">Blog</a></li>
-            <li class="text-cyan-800"><a href=" #" target="_blank">Contact</a></li>
+            <li class="text-cyan-800 hover:bg-indigo-900 hover:text-white rounded-lg px-3 py-2"><a href="#"
+                    target="_blank">Home</a></li>
+            <li class="text-cyan-800 hover:bg-indigo-900 hover:text-white rounded-lg px-3 py-2"><a href=" #"
+                    target="_blank">Our Rooms</a></li>
+            <li class="text-cyan-800 hover:bg-indigo-900 hover:text-white rounded-lg px-3 py-2"><a href=" #"
+                    target="_blank">Page</a></li>
+            <li class="text-cyan-800 hover:bg-indigo-900 hover:text-white rounded-lg px-3 py-2"><a href=" #"
+                    target="_blank">Features</a></li>
+            <li class="text-cyan-800 hover:bg-indigo-900 hover:text-white rounded-lg px-3 py-2"><a href=" #"
+                    target="_blank">Blog</a></li>
+            <li class="text-cyan-800 hover:bg-indigo-900 hover:text-white rounded-lg px-3 py-2"><a href=" #"
+                    target="_blank">Contact</a></li>
         </ul>
         <ul class="gap-5 hidden sm:flex">
             <li><select name="language">
@@ -46,11 +52,11 @@
     </nav>
     <!-- navbar ends -->
     <!-- form section starts -->
-    <section class="form-bg-image sm:flex sm:justify-around sm:items-center">
+    <section class="form-bg-image sm:flex sm:justify-around sm:items-center mb-10">
         <div>
-            <h1 class="text-6xl text-white my-10">Enjoy your <br>dream vacation</h1>
-            <p class="text-white my-5">Quiet and endlessly beautiful hideaway</p>
-            <div class="my-5">
+            <h1 class="text-6xl text-white my-10 text-center sm:text-start">Enjoy your <br>dream vacation</h1>
+            <p class="text-white my-5 text-center sm:text-start">Quiet and endlessly beautiful hideaway</p>
+            <div class="my-5 flex flex-col sm:flex-row items-center sm:items-start">
                 <button class="text-white px-10 py-5 hover:bg-white hover:text-black">About Us</button>
                 <button class="text-white px-10 py-5 hover:bg-white hover:text-black">View HomeStay <i
                         class="fa-solid fa-arrow-right-long"></i></button>
@@ -86,37 +92,55 @@
     </section>
     <!-- form section ends -->
     <!-- welcome section starts -->
-    <section>
-
+    <section class="flex flex-col-reverse sm:flex-row justify-center items-center mx-5 sm:px-32 my-10">
+        <div class="sm:w-1/3 flex flex-col items-center sm:items-start">
+            <p class="text-blue-900 my-3">WELCOME TO</p>
+            <h2 class="text-4xl my-3 text-center sm:text-start">The Mikalto Luxury & Comfort Homestay</h2>
+            <p class="my-3 text-center sm:text-start">Welcome to our five-star hotel in Puerto de la Cruz's old town. A
+                marvelous combination of
+                architecture, design and contemporary art. 32 rooms and 10 uniquely different suites ensure our guests'
+                stay is extra special.</p>
+            <img class="w-1/3 my-3" src="./images/welcome-section/signature-pic.png" alt="">
+            <p class="my-3 text-center sm:text-start">MELINDA AMANDA - HOTEL MANAGER</p>
+        </div>
+        <div class="w-1/2">
+            <img class="" src="./images/welcome-section/welcome-section-pic.png" alt="cooking-guy">
+        </div>
     </section>
     <!-- welcome section ends -->
     <!-- carousel section starts -->
+    <section class="">
+
+    </section>
     <!-- carousel section ends -->
     <!-- why choose our hotel section starts -->
-    <section class="flex flex-col m-12">
-        <h2 class="text-4xl mb-10">Why choose ur hotel?</h2>
+    <section class="flex flex-col mx-12 my-10">
+        <h2 class="text-4xl mb-10 text-center sm:text-start">Why choose ur hotel?</h2>
         <div class="flex flex-col sm:flex-row gap-12">
-            <div class="flex gap-7 items-start">
-                <img src="./images/cuisine-pic.svg" alt="bell">
+            <div class="flex gap-7 flex-col sm:flex-row items-center sm:items-start">
+                <img src="./images/why-choose-hotel-section/cuisine-pic.svg" alt="bell">
                 <div>
-                    <p>Unique cuisine</p>
-                    <p>We use the best ingredients to make special and really taste dishes. Choose what you want to eat
+                    <p class="text-center sm:text-start">Unique cuisine</p>
+                    <p class="text-center sm:text-start">We use the best ingredients to make special and really taste
+                        dishes. Choose what you want to eat
                         every day. You order at the moment.</p>
                 </div>
             </div>
-            <div class="flex gap-7 items-start">
-                <img src="./images/yoga.svg" alt="yoga">
+            <div class="flex gap-7 flex-col sm:flex-row items-center sm:items-start">
+                <img src="./images/why-choose-hotel-section/yoga.svg" alt="yoga">
                 <div>
-                    <p>Yoga & Gym</p>
-                    <p>Sauna and solarium, a fitness corner, bicycles and Mikalto Walking poles available. To stay in
+                    <p class="text-center sm:text-start">Yoga & Gym</p>
+                    <p class="text-center sm:text-start">Sauna and solarium, a fitness corner, bicycles and Mikalto
+                        Walking poles available. To stay in
                         shape especially in vacation.</p>
                 </div>
             </div>
-            <div class="flex gap-7 items-start">
-                <img src="./images/location.svg" alt="location">
+            <div class="flex gap-7 flex-col sm:flex-row items-center sm:items-start">
+                <img src="./images/why-choose-hotel-section/location.svg" alt="location">
                 <div>
-                    <p>Perfect Location</p>
-                    <p>The hotel is located near some of the most beautiful sandy beaches. This is the hotel to book if
+                    <p class="text-center sm:text-start">Perfect Location</p>
+                    <p class="text-center sm:text-start">The hotel is located near some of the most beautiful sandy
+                        beaches. This is the hotel to book if
                         you plan to spend a great deal of time.</p>
                 </div>
             </div>
@@ -124,7 +148,7 @@
     </section>
     <!-- why choose our hotel section ends -->
     <!-- other activities section starts -->
-    <section class="flex flex-col-reverse sm:flex-row items-center blue-color">
+    <section class="flex flex-col-reverse sm:flex-row items-center blue-color mt-10">
         <div class="sm:w-1/2">
             <h4 class="m-5 text-red-300">OTHER ACTIVITIES</h4>
             <h2 class="text-4xl m-5 text-white">Give yourself a smile- Smile & Wellness</h2>
@@ -136,14 +160,14 @@
             <button class="m-5 text-white">Explore More <i class="fa-solid fa-arrow-right-long"></i></button>
         </div>
         <div class="sm:w-1/2">
-            <img class="img-fluid" src="./images/activites-pool-image.png" alt="pool-image">
+            <img class="img-fluid" src="./images/other-activities-section/activites-pool-image.png" alt="pool-image">
         </div>
     </section>
     <!-- other activities section ends -->
     <!-- reconnect nature section starts -->
-    <section class="flex flex-col sm:flex-row items-center blue-color">
+    <section class="flex flex-col sm:flex-row items-center blue-color mb-10">
         <div class="sm:w-1/2">
-            <img class="img-fluid" src="./images/activites-pool-image.png" alt="pool-image">
+            <img class="img-fluid" src="./images/other-activities-section/activites-pool-image.png" alt="pool-image">
         </div>
         <div class="sm:w-1/2">
             <h4 class="m-5 text-red-300">RECONNECT WITH NATURE</h4>
@@ -161,16 +185,17 @@
     </section>
     <!-- reconnect nature section ends -->
     <!-- experience matters section starts -->
-    <section class="flex flex-col items-center">
+    <section class="flex flex-col items-center my-10">
         <p class="text-blue-900">EXPERIENCE MATTERS</p>
         <h2 class="text-4xl text-center">Escape from the World see the experience before you <br> feel it. Discover the
             luxury of Hotel Mikalto</h2>
         <div class="flex my-10 sm:mx-10 gap-5 flex-col sm:flex-row">
-            <div class="sm:m-5 sm:w-1/4 h-max">
-                <img class="" src="./images/wellness-pic.jpg" alt="">
+            <div class="sm:m-5 sm:w-1/4 h-max flex flex-col items-center sm:items-start">
+                <img class="" src="./images/experience-section/wellness-pic.jpg" alt="">
                 <p class="text-blue-900 my-3 mx-5 sm:mx-0">WELLNESS</p>
-                <h5 class="text-3xl my-3 mx-5 sm:mx-0">Dedicated to wellness</h5>
-                <p class="text-blue-900 my-3 mx-5 sm:mx-0">A man's approach to wellness is focused on personalization,
+                <h5 class="text-3xl my-3 mx-5 sm:mx-0 text-center sm:text-start">Dedicated to wellness</h5>
+                <p class="text-blue-900 my-3 mx-5 sm:mx-0 text-center sm:text-start">A man's approach to wellness is
+                    focused on personalization,
                     privacy and
                     seclusion. Local spa rituals
                     with indegenous ingredients, offer a profoundly therapeutic touch, and a gentle sense of discovery.
@@ -178,11 +203,12 @@
                 <button class="text-blue-900 mx-5 sm:mx-0">Discover more <i
                         class="fa-solid fa-arrow-right-long"></i></button>
             </div>
-            <div class="sm:m-5 sm:w-1/4 h-max">
-                <img class="w-full " src="./images/gift-card-pic.jpeg" alt="">
+            <div class="sm:m-5 sm:w-1/4 h-max flex flex-col items-center sm:items-start">
+                <img class="w-full " src="./images/experience-section/gift-card-pic.jpeg" alt="">
                 <p class="text-blue-900 my-3 mx-5 sm:mx-0">GIFT CARDS</p>
-                <h5 class="text-3xl my-3 mx-5 sm:mx-0">The gift of future travel</h5>
-                <p class="text-blue-900 my-3 mx-5 sm:mx-0">Share extraordinary experiences with the Aman E-Gift Card
+                <h5 class="text-3xl my-3 mx-5 sm:mx-0 text-center sm:text-start">The gift of future travel</h5>
+                <p class="text-blue-900 my-3 mx-5 sm:mx-0 text-center sm:text-start">Share extraordinary experiences
+                    with the Aman E-Gift Card
                     delievered
                     instantly
                     and offering memories
@@ -190,11 +216,12 @@
                 <button class="text-blue-900 mx-5 sm:mx-0">Discover more <i
                         class="fa-solid fa-arrow-right-long"></i></button>
             </div>
-            <div class="sm:m-5 sm:w-1/4 h-max">
-                <img class="w-full " src="./images/mikalto-shop-pic.jpg" alt="">
+            <div class="sm:m-5 sm:w-1/4 h-max flex flex-col items-center sm:items-start">
+                <img class="w-full " src="./images/experience-section/mikalto-shop-pic.jpg" alt="">
                 <p class="text-blue-900 my-3 mx-5 sm:mx-0">MIKALTO SHOP</p>
-                <h5 class="text-3xl my-3 mx-5 sm:mx-0">The spa experience from home</h5>
-                <p class="text-blue-900 my-3 mx-5 sm:mx-0">Skincare and Spa supplements harness powerful natural
+                <h5 class="text-3xl my-3 mx-5 sm:mx-0 text-center sm:text-start">The spa experience from home</h5>
+                <p class="text-blue-900 my-3 mx-5 sm:mx-0 text-center sm:text-start">Skincare and Spa supplements
+                    harness powerful natural
                     ingredients to
                     provide
                     balance and optimal
@@ -202,11 +229,12 @@
                 <button class="text-blue-900 mx-5 sm:mx-0">Discover more <i
                         class="fa-solid fa-arrow-right-long"></i></button>
             </div>
-            <div class="sm:m-5 sm:w-1/4 h-max">
-                <img class="" src="./images/experience-wilderness-pic.jpg" alt="">
+            <div class="sm:m-5 sm:w-1/4 h-max flex flex-col items-center sm:items-start">
+                <img class="" src="./images/experience-section/experience-wilderness-pic.jpg" alt="">
                 <p class="text-blue-900 my-3 mx-5 sm:mx-0">EXPERIENCE</p>
-                <h5 class="text-3xl my-3 mx-5 sm:mx-0">Adventures in the wild</h5>
-                <p class="text-blue-900 my-3 mx-5 sm:mx-0">Skincare and Spa supplements harness powerful natural
+                <h5 class="text-3xl my-3 mx-5 sm:mx-0 text-center sm:text-start">Adventures in the wild</h5>
+                <p class="text-blue-900 my-3 mx-5 sm:mx-0 text-center sm:text-start">Skincare and Spa supplements
+                    harness powerful natural
                     ingredients to
                     provide
                     balance and optimal
@@ -219,7 +247,7 @@
     </section>
     <!-- experience matters section ends -->
     <!-- hello new you section starts -->
-    <section class="hello-new-you-bg-image  sm:flex sm:flex-row-reverse">
+    <section class="hello-new-you-bg-image  sm:flex sm:flex-row-reverse my-10">
         <div class="sm:w-1/2 p-5 sm:py-16">
             <div class="bg-creme-color sm:w-[70%] p-2">
                 <h2 class="text-4xl sm:mt-12 my-5 sm:mx-10">Say hello <br> to a whole new you</h2>
@@ -235,19 +263,19 @@
     </section>
     <!-- hello new you section ends -->
     <!-- reviews section starts -->
-    <section class="flex justify-center py-16 bg-creme-color">
+    <section class="flex justify-center py-16 bg-creme-color my-10">
         <div class="w-3/4 flex flex-col sm:flex-row gap-16 items-center">
             <div class="flex flex-col gap-3">
                 <div class="flex justify-between">
                     <div class="flex items-center">
-                        <img src="./images/review-1.png" alt="">
+                        <img src="./images/reviews-section/review-1.png" alt="man-1">
                         <div>
                             <p class="font-semibold">Selena Mayer</p>
                             <p>2021-01-10</p>
                         </div>
                     </div>
-                    <div>
-                        <img src="./images/profile-image-default.png" alt="">
+                    <div class="flex items-center">
+                        <img src="./images/reviews-section/profile-image-default.png" alt="profile-logo">
                     </div>
                 </div>
                 <!-- checkbox -->
@@ -260,14 +288,14 @@
             <div class="flex flex-col gap-3">
                 <div class="flex justify-between">
                     <div class="flex items-center">
-                        <img src="./images/review-2.png" alt="">
+                        <img src="./images/reviews-section/review-2.png" alt="man-2">
                         <div>
                             <p class="font-semibold">Selena Mayer</p>
                             <p>2021-01-10</p>
                         </div>
                     </div>
-                    <div>
-                        <img src="./images/profile-image-default.png" alt="">
+                    <div class="flex items-center">
+                        <img src="./images/reviews-section/profile-image-default.png" alt="profile-logo">
                     </div>
                 </div>
                 <!-- checkbox -->
@@ -279,14 +307,14 @@
             <div class="flex flex-col gap-3">
                 <div class="flex justify-between">
                     <div class="flex items-center">
-                        <img src="./images/review-3.png" alt="">
+                        <img src="./images/reviews-section/review-3.png" alt="man-3">
                         <div>
                             <p class="font-semibold">Selena Mayer</p>
                             <p>2021-01-10</p>
                         </div>
                     </div>
-                    <div>
-                        <img src="./images/profile-image-default.png" alt="">
+                    <div class="flex items-center">
+                        <img src="./images/reviews-section/profile-image-default.png" alt="profile-logo">
                     </div>
                 </div>
                 <!-- checkbox -->
@@ -299,9 +327,9 @@
     </section>
     <!-- reviews section ends -->
     <!-- map section starts -->
-    <section class="flex flex-col-reverse sm:flex-row items-center sm:px-24">
+    <section class="flex flex-col-reverse sm:flex-row items-center sm:px-24 my-10">
         <div class="sm:mx-12">
-            <img class="m-auto sm:ml-0" src="./images/leaf.png" alt="leaf">
+            <img class="m-auto sm:ml-0" src="./images/how-to-get-there-section/leaf.png" alt="leaf">
             <p class="my-3 text-center sm:text-start">GETTING HERE</p>
             <h2 class="text-4xl my-3 text-center sm:text-start">How to get there?</h2>
             <p class="my-3 text-center sm:text-start">Cras vel sapien erat. Proin molestie malesuada sem, nec euismod
@@ -349,9 +377,9 @@
     </section>
     <!-- map section ends -->
     <!-- side nature section starts -->
-    <section class="flex flex-col sm:flex-row items-center bg-creme-color">
+    <section class="flex flex-col sm:flex-row items-center bg-creme-color my-10">
         <div class="my-12">
-            <img class="sm:mt-[-90px]" src="./images/nature-pic.png" alt="">
+            <img class="sm:mt-[-90px]" src="./images/side-nature-section/nature-pic.png" alt="">
         </div>
         <div class="flex flex-col items-center">
             <p class="text-blue-900 my-3">SPA & WELLNESS</p>
@@ -366,13 +394,14 @@
     </section>
     <!-- side nature section ends  -->
     <!-- subscribe section starts -->
-    <section class="flex flex-col items-center">
-        <p class="my-5">STORIES DELOVERED STRAIGHT</p>
+    <section class="flex flex-col items-center my-10">
+        <p class="my-5 text-blue-900">STORIES DELOVERED STRAIGHT</p>
         <h2 class="text-4xl my-5 text-center sm:text-start">Get News & Update to Your Inbox</h2>
-        <div class="border-2 border-slate-300 my-5 p-2 w-full sm:w-1/2 flex justify-between flex-col sm:flex-row">
-            <input class="outline-0 w-full text-center sm:text-start" type="email"
+        <div
+            class="border-2 border-slate-300 my-5 p-2 w-full sm:w-1/2 flex justify-between items-center flex-col sm:flex-row">
+            <input class="outline-0 w-full text-center py-4 sm:text-start" type="email"
                 placeholder="Enter you email address...">
-            <button class="blue-color text-white sm:py-3 sm:px-8">Subscribe</button>
+            <button class="blue-color text-white py-3 px-8">Subscribe</button>
         </div>
         <p class="text-center sm:text-start">Will be used in accordance with our <a class="underline decoration-2"
                 href="#" target="_blank">Privacy
@@ -383,12 +412,13 @@
     <!-- footer section starts -->
     <section
         class="blue-color text-white flex flex-col items-center sm:items-start sm:flex-row justify-center gap-10 py-24">
-        <div class="flex flex-col items-start sm:w-1/5">
+        <div class="flex flex-col items-center sm:items-start sm:w-1/5">
             <div class="flex flex-col text-center sm:my-3">
                 <h4 class="text-4xl">Mikalto</h4>
                 <p class="text-xs">HOTELS & RESORTS</p>
             </div>
-            <p class="my-3">Duis vitae nulla at nisl finibus pharetra. Nunc porttitor sapien quis euismod sodales.
+            <p class="my-3 text-center sm:text-start">Duis vitae nulla at nisl finibus pharetra. Nunc porttitor sapien
+                quis euismod sodales.
                 Nullam in ipsum
                 nibh. </p>
             <p class="font-semibold my-3 flex gap-4">Follow us:
@@ -402,41 +432,71 @@
         <div class="">
             <p class="font-semibold text-center sm:text-start">About
             <ul class="cursor-pointer text-center sm:text-start">
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">About us</li>
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Careers</li>
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Contact us</li>
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Blog</li>
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Gift Cards</li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">About us</a>
+                </li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Careers</a>
+                </li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Contact us</a>
+                </li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Blog</a>
+                </li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Gift Cards</a>
+                </li>
             </ul>
             </p>
         </div>
         <div class="">
             <p class="font-semibold text-center sm:text-start">Services</p>
             <ul class="cursor-pointer text-center sm:text-start">
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Spa</li>
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Experience</li>
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Weddings</li>
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Dining</li>
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Event</li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Spa</a>
+                </li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Experience</a>
+                </li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Weddings</a>
+                </li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Dining</a>
+                </li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Event</a>
+                </li>
             </ul>
         </div>
         <div class="">
             <p class="font-semibold text-center sm:text-start">Quick Links</p>
             <ul class="cursor-pointer text-center sm:text-start">
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Facilities</li>
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Accommodation</li>
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Reservation</li>
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Why Choose Us</li>
-                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">Our Restaurant</li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Facilities</a>
+                </li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Accomodation</a>
+                </li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Reservation</a>
+                </li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Why Choose Us</a>
+                </li>
+                <li class="text-slate-400 hover:text-white hover:underline hover:decoration-2">
+                    <a href="#" target="_blank">Our Restaurant</a>
+                </li>
             </ul>
         </div>
-        <div class="">
+        <div class="flex flex-col gap-5 items-center sm:items-start">
             <p class="font-semibold">Contact Us</p>
-            <div>
+            <div class="flex flex-col items-center sm:items-start">
                 <p class="text-slate-400">Total Free Customer Support</p>
                 <p class="font-semibold">(+123)1500-456-7890</p>
             </div>
-            <div>
+            <div class="flex flex-col items-center sm:items-start">
                 <p class="text-slate-400">Need Live support?</p>
                 <p class="font-semibold">reservation@mikalto.com</p>
             </div>
@@ -449,14 +509,17 @@
         <div class="flex flex-col-reverse sm:flex-row gap-5">
             <p>Copyright <i class="far fa-light fa-copyright"></i> 2022 Mikalto JWS</p>
             <ul class="flex flex-col sm:flex-row gap-10">
-                <li>Privacy</li>
-                <li>Terms</li>
-                <li>Sitemap</li>
+                <li><a href="#" target="_blank">Privacy</a>
+                </li>
+                <li><a href="#" target="_blank">Terms</a>
+                </li>
+                <li><a href="#" target="_blank">Sitemap</a>
+                    Sitemap</li>
             </ul>
         </div>
         <div>
             <i class="fas fa-light fa-globe"></i>
-            <select class="text-black" name="EN" id="">
+            <select class="bg bg-black" name="EN" id="">
                 <option value="EN"></option>
                 <option value="HN"></option>
                 <option value="CH"></option>

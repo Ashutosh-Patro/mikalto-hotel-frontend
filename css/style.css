@@ -4,7 +4,8 @@ body {
 }
 
 .form-bg-image {
-    background: url(../images/form-bg-image.png);
+    background: url(../images/banner-form-section/form-bg-image.png) no-repeat;
+    background-size: cover;
 }
 
 .bg-creme-color {
@@ -16,6 +17,6 @@ body {
 }
 
 .hello-new-you-bg-image {
-    background: url(../images/hello-new-you-pic-bg.webp) no-repeat;
+    background: url(../images/new-you-section/hello-new-you-pic-bg.webp) no-repeat;
     background-size: cover;
 }
