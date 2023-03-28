@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mikalto Hotels</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./images/favicon.webp">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
@@ -109,9 +110,50 @@
     </section>
     <!-- welcome section ends -->
     <!-- carousel section starts -->
-    <section class="">
-
-    </section>
+    <!-- <section class="blue-color flex">
+        <div>
+            <div>
+                <p class="text-red-300">ELEGANCE AND COMFORT</p>
+                <h2 class="text-4xl text-white">Standard Room </h2>
+                <p class="text-white">From <span class="font-semibold">$150/</span> night</p>
+                <p class="text-white">With wide and comfortable areas and daylight pouring in from the...</p>
+                <div class="grid grid-rows-4 grid-flow-col gap-4">
+                    <p class="font-semibold text-white">Bed:</p>
+                    <p class="font-semibold text-white">Capacity:</p>
+                    <p class="font-semibold text-white">Room Size:</p>
+                    <p class="font-semibold text-white">View:</p>
+                    <p class="text-white">Queen Size Bed</p>
+                    <p class="text-white">2 Adults, 1 Children</p>
+                    <p class="text-white">55 sqm</p>
+                    <p class="text-white">Garden view</p>
+                </div>
+                <button class="border-2 border-white py-2 px-5">View Detail</button>
+            </div>
+            <div>
+                <p class="text-red-300">ELEGANCE AND COMFORT</p>
+                <h2 class="text-4xl text-white">Dulex Room </h2>
+                <p class="text-white">From <span class="font-semibold">$250/</span> night</p>
+                <p class="text-white">With wide and comfortable areas and daylight pouring in from the...</p>
+                <div class="grid grid-rows-4 grid-flow-col gap-4">
+                    <p class="font-semibold text-white">Bed:</p>
+                    <p class="font-semibold text-white">Capacity:</p>
+                    <p class="font-semibold text-white">Room Size:</p>
+                    <p class="font-semibold text-white">View:</p>
+                    <p class="text-white">King Size Bed</p>
+                    <p class="text-white">2 Adults, 2 Children</p>
+                    <p class="text-white">80 sqm</p>
+                    <p class="text-white">Beach view</p>
+                </div>
+                <button class="border-2 border-white py-2 px-5">View Detail</button>
+            </div>
+        </div>
+        <div>
+            <img src="./images/hotel-rooms-carousel/standardRoom.jpg" alt="standard-room">
+            <img src="./images/hotel-rooms-carousel/dulexRoom.jpeg" alt="dulex-room">
+        </div>
+        <button class="text-white"><i class="fa-solid fa-chevron-left"></i> </button>
+        <button class="text-white"><i class="fa-solid fa-chevron-right"></i></button>
+    </section> -->
     <!-- carousel section ends -->
     <!-- why choose our hotel section starts -->
     <section class="flex flex-col mx-12 my-10">
@@ -148,7 +190,7 @@
     </section>
     <!-- why choose our hotel section ends -->
     <!-- other activities section starts -->
-    <section class="flex flex-col-reverse sm:flex-row items-center blue-color mt-10">
+    <section class="flex flex-col-reverse sm:flex-row items-center blue-color mt-10" id="activities">
         <div class="sm:w-1/2">
             <h4 class="m-5 text-red-300">OTHER ACTIVITIES</h4>
             <h2 class="text-4xl m-5 text-white">Give yourself a smile- Smile & Wellness</h2>
@@ -160,7 +202,7 @@
             <button class="m-5 text-white">Explore More <i class="fa-solid fa-arrow-right-long"></i></button>
         </div>
         <div class="sm:w-1/2">
-            <img class="img-fluid" src="./images/other-activities-section/activites-pool-image.png" alt="pool-image">
+            <img class="img-fluid activities-image" src="" alt="pool-image">
         </div>
     </section>
     <!-- other activities section ends -->
@@ -189,56 +231,37 @@
         <p class="text-blue-900">EXPERIENCE MATTERS</p>
         <h2 class="text-4xl text-center">Escape from the World see the experience before you <br> feel it. Discover the
             luxury of Hotel Mikalto</h2>
-        <div class="flex my-10 sm:mx-10 gap-5 flex-col sm:flex-row">
+        <div class="flex my-10 sm:mx-10 gap-5 flex-col sm:flex-row" id="experience-items">
             <div class="sm:m-5 sm:w-1/4 h-max flex flex-col items-center sm:items-start">
-                <img class="" src="./images/experience-section/wellness-pic.jpg" alt="">
-                <p class="text-blue-900 my-3 mx-5 sm:mx-0">WELLNESS</p>
-                <h5 class="text-3xl my-3 mx-5 sm:mx-0 text-center sm:text-start">Dedicated to wellness</h5>
-                <p class="text-blue-900 my-3 mx-5 sm:mx-0 text-center sm:text-start">A man's approach to wellness is
-                    focused on personalization,
-                    privacy and
-                    seclusion. Local spa rituals
-                    with indegenous ingredients, offer a profoundly therapeutic touch, and a gentle sense of discovery.
+                <img class="experience-image" src="" alt="spa">
+                <p class="text-blue-900 my-3 mx-5 sm:mx-0 sub-heading"></p>
+                <h5 class=" text-3xl my-3 mx-5 sm:mx-0 text-center sm:text-start heading"></h5>
+                <p class="text-blue-900 my-3 mx-5 sm:mx-0 text-center sm:text-start content">
                 </p>
                 <button class="text-blue-900 mx-5 sm:mx-0">Discover more <i
                         class="fa-solid fa-arrow-right-long"></i></button>
             </div>
             <div class="sm:m-5 sm:w-1/4 h-max flex flex-col items-center sm:items-start">
-                <img class="w-full " src="./images/experience-section/gift-card-pic.jpeg" alt="">
-                <p class="text-blue-900 my-3 mx-5 sm:mx-0">GIFT CARDS</p>
-                <h5 class="text-3xl my-3 mx-5 sm:mx-0 text-center sm:text-start">The gift of future travel</h5>
-                <p class="text-blue-900 my-3 mx-5 sm:mx-0 text-center sm:text-start">Share extraordinary experiences
-                    with the Aman E-Gift Card
-                    delievered
-                    instantly
-                    and offering memories
-                    that last a lifetime.</p>
+                <img class="w-full experience-image" src="" alt="view" id="gift-card-image">
+                <p class="text-blue-900 my-3 mx-5 sm:mx-0 sub-heading"></p>
+                <h5 class=" text-3xl my-3 mx-5 sm:mx-0 text-center sm:text-start heading"></h5>
+                <p class="text-blue-900 my-3 mx-5 sm:mx-0 text-center sm:text-start content"></p>
                 <button class="text-blue-900 mx-5 sm:mx-0">Discover more <i
                         class="fa-solid fa-arrow-right-long"></i></button>
             </div>
             <div class="sm:m-5 sm:w-1/4 h-max flex flex-col items-center sm:items-start">
-                <img class="w-full " src="./images/experience-section/mikalto-shop-pic.jpg" alt="">
-                <p class="text-blue-900 my-3 mx-5 sm:mx-0">MIKALTO SHOP</p>
-                <h5 class="text-3xl my-3 mx-5 sm:mx-0 text-center sm:text-start">The spa experience from home</h5>
-                <p class="text-blue-900 my-3 mx-5 sm:mx-0 text-center sm:text-start">Skincare and Spa supplements
-                    harness powerful natural
-                    ingredients to
-                    provide
-                    balance and optimal
-                    wellbeing.</p>
+                <img class="w-full experience-image" src="" alt="perfume">
+                <p class="text-blue-900 my-3 mx-5 sm:mx-0 sub-heading"></p>
+                <h5 class="text-3xl my-3 mx-5 sm:mx-0 text-center sm:text-start heading"></h5>
+                <p class="text-blue-900 my-3 mx-5 sm:mx-0 text-center sm:text-start content"></p>
                 <button class="text-blue-900 mx-5 sm:mx-0">Discover more <i
                         class="fa-solid fa-arrow-right-long"></i></button>
             </div>
             <div class="sm:m-5 sm:w-1/4 h-max flex flex-col items-center sm:items-start">
-                <img class="" src="./images/experience-section/experience-wilderness-pic.jpg" alt="">
-                <p class="text-blue-900 my-3 mx-5 sm:mx-0">EXPERIENCE</p>
-                <h5 class="text-3xl my-3 mx-5 sm:mx-0 text-center sm:text-start">Adventures in the wild</h5>
-                <p class="text-blue-900 my-3 mx-5 sm:mx-0 text-center sm:text-start">Skincare and Spa supplements
-                    harness powerful natural
-                    ingredients to
-                    provide
-                    balance and optimal
-                    wellbeing.</p>
+                <img class="experience-image" src="" alt="forest">
+                <p class="text-blue-900 my-3 mx-5 sm:mx-0 sub-heading"></p>
+                <h5 class="text-3xl my-3 mx-5 sm:mx-0 text-center sm:text-start heading"></h5>
+                <p class="text-blue-900 my-3 mx-5 sm:mx-0 text-center sm:text-start content"></p>
                 <button class="text-blue-900 mx-5 sm:mx-0">Discover more <i
                         class="fa-solid fa-arrow-right-long"></i></button>
             </div>
@@ -264,64 +287,54 @@
     <!-- hello new you section ends -->
     <!-- reviews section starts -->
     <section class="flex justify-center py-16 bg-creme-color my-10">
-        <div class="w-3/4 flex flex-col sm:flex-row gap-16 items-center">
-            <div class="flex flex-col gap-3">
+        <div class="w-3/4 flex flex-col sm:flex-row gap-16 items-center" id="review-items">
+            <div class="flex flex-col gap-3 review-item-div">
                 <div class="flex justify-between">
                     <div class="flex items-center">
-                        <img src="./images/reviews-section/review-1.png" alt="man-1">
+                        <img class="review-image" src="" alt="man-1">
                         <div>
-                            <p class="font-semibold">Selena Mayer</p>
-                            <p>2021-01-10</p>
+                            <p class="font-semibold review-name"></p>
+                            <p class="review-date"></p>
                         </div>
                     </div>
                     <div class="flex items-center">
-                        <img src="./images/reviews-section/profile-image-default.png" alt="profile-logo">
+                        <img class="review-default-image" src="" alt="profile-logo">
                     </div>
                 </div>
-                <!-- checkbox -->
-                <p class="font-semibold">Wondeerful new year trip</p>
-                <p>"One of the best hotels I've ever stayed in.
-                    The staff are very friendly and helpful, they
-                    were so helpful it made me feel bad. It
-                    includes use of the Spa, wonderful, it has a...</p>
+                <p class="font-semibold review-heading"></p>
+                <p class="review-content"></p>
             </div>
-            <div class="flex flex-col gap-3">
+            <div class="flex flex-col gap-3 review-item-div">
                 <div class="flex justify-between">
                     <div class="flex items-center">
-                        <img src="./images/reviews-section/review-2.png" alt="man-2">
+                        <img class="review-image" src="" alt="man-2">
                         <div>
-                            <p class="font-semibold">Selena Mayer</p>
-                            <p>2021-01-10</p>
+                            <p class="font-semibold review-name"></p>
+                            <p class="review-date"></p>
                         </div>
                     </div>
                     <div class="flex items-center">
-                        <img src="./images/reviews-section/profile-image-default.png" alt="profile-logo">
+                        <img class="review-default-image" src="" alt="profile-logo">
                     </div>
                 </div>
-                <!-- checkbox -->
-                <p class="font-semibold">Recommended</p>
-                <p>Great resort, professional staffs". It turns out that you're searching for paradise and you have it
-                    hear,
-                    nearby. Thanks for the warmth, you are fantastic. </p>
+                <p class="font-semibold review-heading"></p>
+                <p class="review-content"></p>
             </div>
-            <div class="flex flex-col gap-3">
+            <div class="flex flex-col gap-3 review-item-div">
                 <div class="flex justify-between">
                     <div class="flex items-center">
-                        <img src="./images/reviews-section/review-3.png" alt="man-3">
+                        <img class="review-image" src="" alt="man-3">
                         <div>
-                            <p class="font-semibold">Selena Mayer</p>
-                            <p>2021-01-10</p>
+                            <p class="font-semibold review-name"></p>
+                            <p class="review-date"></p>
                         </div>
                     </div>
                     <div class="flex items-center">
-                        <img src="./images/reviews-section/profile-image-default.png" alt="profile-logo">
+                        <img class="review-default-image" src="" alt="profile-logo">
                     </div>
                 </div>
-                <!-- checkbox -->
-                <p class="font-semibold">All good</p>
-                <p>"I love the Resort and its environment. Mikalto is incredibly dedicated, knowledgeable, and helpful.
-                    The
-                    finished product was beautiful every penny... </p>
+                <p class="font-semibold review-heading"></p>
+                <p class="review-content"></p>
             </div>
         </div>
     </section>
