@@ -6,6 +6,8 @@ const navRight = document.querySelector('#nav-item-list-right')
 const experienceItem = document.querySelectorAll('#experience-items div')
 const reviewItem = document.querySelectorAll('#review-items .review-item-div')
 const activityData = document.querySelector('#activities')
+const reconnectNature = document.querySelector('#reconnect-nature')
+const banner = document.querySelector('#banner')
 
 function dropdown() {
     crossIcon.classList.toggle('hidden')
@@ -24,7 +26,21 @@ function removeDropdown() {
     navBar.style.opacity = '1'
 }
 
-(async function fetchCards() {
+function next() {
+    document.querySelector('.dulex-room-image').classList.toggle('hidden')
+    document.querySelector('.standard-room-image').classList.toggle('hidden')
+    document.querySelector('.standard-room-details').classList.toggle('hidden')
+    document.querySelector('.dulex-room-details').classList.toggle('hidden')
+}
+
+function previous() {
+    document.querySelector('.dulex-room-image').classList.toggle('hidden')
+    document.querySelector('.standard-room-image').classList.toggle('hidden')
+    document.querySelector('.standard-room-details').classList.toggle('hidden')
+    document.querySelector('.dulex-room-details').classList.toggle('hidden')
+}
+
+async function fetchCards() {
     await fetch('http://localhost:8081/experience').then((data) => {
         return data.json();
     }).then((res) => {
@@ -41,7 +57,7 @@ function removeDropdown() {
             item.querySelector('.content').textContent = `${res.experienceObj[index].cardContent}`
         })
     })
-})()
+}
 
 async function fetchReviews() {
     await fetch('http://localhost:8081/reviews').then((data) => {
@@ -68,14 +84,56 @@ async function fetchReviews() {
     })
 }
 
-fetchReviews()
-
 async function fetchActivities() {
     await fetch('http://localhost:8081/activitiesNature').then((data) => {
         return data.json();
     }).then((res) => {
-        activityData.querySelector('.activities-image').setAttribute('src', `${res.activitiesNatureObj[index].imageURL}`)
+        activityData.querySelector('.activities-image').setAttribute('src', `${res.activitiesNatureObj[0].imageURL}`);
+        activityData.querySelector('.activities-sub-heading').textContent = `${res.activitiesNatureObj[0].cardSubHeading}`;
+        activityData.querySelector('.activities-heading').textContent = `${res.activitiesNatureObj[0].cardHeading}`;
+        activityData.querySelector('.activities-content').textContent = `${res.activitiesNatureObj[0].cardContent}`;
     })
 }
 
-fetchActivities()
+async function fetchReconnectNature() {
+    await fetch('http://localhost:8081/activitiesNature').then((data) => {
+        return data.json();
+    }).then((res) => {
+        reconnectNature.querySelector('.reconnect-nature-image').setAttribute('src', `${res.activitiesNatureObj[1].imageURL}`)
+        reconnectNature.querySelector('.reconnect-nature-sub-heading').textContent = `${res.activitiesNatureObj[1].cardSubHeading}`
+        reconnectNature.querySelector('.reconnect-nature-heading').textContent = `${res.activitiesNatureObj[1].cardHeading}`
+        reconnectNature.querySelector('.reconnect-nature-content').textContent = `${res.activitiesNatureObj[1].cardContent}`
+        for (let i = 0; i < res.activitiesNatureObj[1].list.length; i++) {
+            let li = document.createElement('li')
+            li.textContent = `${res.activitiesNatureObj[1].list[i]}`
+            reconnectNature.querySelector('.reconnect-nature-list').appendChild(li)
+        }
+
+    })
+}
+
+async function fetchBannerData() {
+    await fetch('http://localhost:8081/banner').then((data) => {
+        return data.json();
+    }).then((res) => {
+        banner.style.backgroundImage = `url(${res.bannerObj[0].imageURL})`
+        banner.querySelector('.banner-heading').textContent = `${res.bannerObj[0].bannerHeading}`
+        banner.querySelector('.banner-content').textContent = `${res.bannerObj[0].bannerContent}`
+    })
+}
+
+(() => {
+    fetchCards();
+    fetchReviews();
+    fetchActivities();
+    fetchReconnectNature();
+    fetchBannerData();
+})()
+
+fetch("http://localhost:5000/", {
+    method: "POST",
+    headers: {
+        "Content-type": "application/json; charset=UTF-8",
+    },
+    body: JSON.stringify(formDetails),
+})
