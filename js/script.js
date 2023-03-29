@@ -8,6 +8,7 @@ const reviewItem = document.querySelectorAll('#review-items .review-item-div')
 const activityData = document.querySelector('#activities')
 const reconnectNature = document.querySelector('#reconnect-nature')
 const banner = document.querySelector('#banner')
+const submitBtn = document.querySelector('.submit')
 
 function dropdown() {
     crossIcon.classList.toggle('hidden')
@@ -108,7 +109,6 @@ async function fetchReconnectNature() {
             li.textContent = `${res.activitiesNatureObj[1].list[i]}`
             reconnectNature.querySelector('.reconnect-nature-list').appendChild(li)
         }
-
     })
 }
 
@@ -130,10 +130,20 @@ async function fetchBannerData() {
     fetchBannerData();
 })()
 
-fetch("http://localhost:5000/", {
-    method: "POST",
-    headers: {
-        "Content-type": "application/json; charset=UTF-8",
-    },
-    body: JSON.stringify(formDetails),
+submitBtn.addEventlistener('click', () => {
+    if (form.checkin.value.length > 0 && form.checkout.value.length > 0 && form.adult.value.length > 0 && form.child.value.length > 0) {
+        fetch("http://localhost:8081/", {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+            },
+            body: `id=${Date.now()}&checkin=${form.checkin.value}&checkout=${form.checkout.value}&adult=${form.adult.value}&child=${form.child.value}`,
+        }).then((res) => {
+            console.log(res.json());
+        })
+    }
+    else {
+        alert("Fields should not be empty")
+    }
+
 })

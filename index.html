@@ -77,7 +77,7 @@
                 </button>
             </div>
         </div>
-        <form class="bg-creme-color p-12 my-12">
+        <form class="bg-creme-color p-12 my-12" name="form">
             <p class="text-4xl text-neutral-500">Search Room</p>
             <p class="text-neutral-400">Get the latest on our COVID-19 response</p>
             <div class="flex flex-col sm:flex-row justify-between my-10">
@@ -85,24 +85,24 @@
                     <div>
                         <i class="far fa fa-thin fa-calendar"></i> Checkin<sup>*</sup>
                     </div>
-                    <input class="bg-creme-color border-b-2" type="date" />
+                    <input class="bg-creme-color border-b-2 outline-0" type="date" name="checkin" />
                 </div>
                 <div class="flex flex-col">
                     <div>
                         <i class="far fa fa-thin fa-calendar"></i> Checkout<sup>*</sup>
                     </div>
-                    <input class="bg-creme-color border-b-2" type="date" />
+                    <input class="bg-creme-color border-b-2 outline-0" type="date" name="checkin" />
                 </div>
             </div>
             <div class="my-5">
                 <p><i class="far fa-light fa-user"></i> Adults</p>
-                <input class="bg-creme-color border-b-2" type="number" />
+                <input class="bg-creme-color border-b-2 outline-0" type="number" name="adult" />
             </div>
             <div class="my-5">
                 <p><i class="fa-regular fa-face-smile-beam"></i> Children</p>
-                <input class="bg-creme-color border-b-2" type="number" />
+                <input class="bg-creme-color border-b-2 outline-0" type="number" name="child" />
             </div>
-            <button class="blue-color text-white w-full py-5">
+            <button class="blue-color text-white w-full py-5 submit">
                 Check availability
             </button>
         </form>
@@ -132,23 +132,24 @@
     <!-- welcome section ends -->
 
     <!-- carousel section starts -->
-    <section class="blue-color flex flex-col sm:flex-row sm:h-[50vh] flex items-center relative">
+    <section class="blue-color flex flex-col sm:flex-row h-[80vh] sm:h-[50vh] flex items-center relative">
         <div class="sm:w-1/2">
             <div class="standard-room-details">
-                <p class="text-red-300 my-2 ml-10">ELEGANCE AND COMFORT</p>
-                <h2 class="text-4xl text-white my-2 ml-10">Standard Room </h2>
-                <p class="text-white my-2 ml-10">From <span class="font-semibold">$150/</span> night</p>
-                <p class="text-white my-2 ml-10">With wide and comfortable areas and daylight pouring in from the...</p>
-                <div class="grid grid-rows-4 grid-flow-col gap-4 my-2 ml-10">
-                    <p class="font-semibold text-white">Bed:</p>
-                    <p class="font-semibold text-white">Capacity:</p>
-                    <p class="font-semibold text-white">Room Size:</p>
-                    <p class="font-semibold text-white">View:</p>
-                    <p class="text-white">Queen Size Bed</p>
-                    <p class="text-white">2 Adults, 1 Children</p>
-                    <p class="text-white">55 sqm</p>
-                    <p class="text-white">Garden view</p>
-                </div>
+                <p class="text-red-300 my-2 ml-10 room-sub-heading">ELEGANCE AND COMFORT</p>
+                <h2 class="text-4xl text-white my-2 ml-10 room-heading">Standard Room </h2>
+                <p class="text-white my-2 ml-10 room-rate">From <span class="font-semibold">$150/</span> night</p>
+                <p class="text-white my-2 ml-10 room-detail">With wide and comfortable areas and daylight pouring in
+                    from the...</p>
+                <ul class="grid grid-rows-4 grid-flow-col gap-4 my-2 ml-10 room-detail-content">
+                    <li class="font-semibold text-white">Bed:</li>
+                    <li class="font-semibold text-white">Capacity:</li>
+                    <li class="font-semibold text-white">Room Size:</li>
+                    <li class="font-semibold text-white">View:</li>
+                    <li class="text-white">Queen Size Bed</li>
+                    <li class="text-white">2 Adults, 1 Children</li>
+                    <li class="text-white">55 sqm</li>
+                    <li class="text-white">Garden view</li>
+                </ul>
                 <button
                     class="text-white border-2 border-white py-3 px-10 my-2 ml-10 hover:bg-white hover:text-blue-900">View
                     Detail</button>
@@ -158,16 +159,16 @@
                 <h2 class="text-4xl text-white my-2 ml-10">Dulex Room </h2>
                 <p class="text-white my-2 ml-10">From <span class="font-semibold">$250/</span> night</p>
                 <p class="text-white my-2 ml-10">With wide and comfortable areas and daylight pouring in from the...</p>
-                <div class="grid grid-rows-4 grid-flow-col gap-4 my-2 ml-10">
-                    <p class="font-semibold text-white">Bed:</p>
-                    <p class="font-semibold text-white">Capacity:</p>
-                    <p class="font-semibold text-white">Room Size:</p>
-                    <p class="font-semibold text-white">View:</p>
-                    <p class="text-white">King Size Bed</p>
-                    <p class="text-white">2 Adults, 2 Children</p>
-                    <p class="text-white">80 sqm</p>
-                    <p class="text-white">Beach view</p>
-                </div>
+                <ul class="grid grid-rows-4 grid-flow-col gap-4 my-2 ml-10">
+                    <li class="font-semibold text-white">Bed:</li>
+                    <li class="font-semibold text-white">Capacity:</li>
+                    <li class="font-semibold text-white">Room Size:</li>
+                    <li class="font-semibold text-white">View:</li>
+                    <li class="text-white">King Size Bed</li>
+                    <li class="text-white">2 Adults, 2 Children</li>
+                    <li class="text-white">80 sqm</li>
+                    <li class="text-white">Beach view</li>
+                </ul>
                 <button
                     class="text-white border-2 border-white py-3 px-10 my-2 ml-10 hover:bg-white hover:text-blue-900">View
                     Detail</button>
