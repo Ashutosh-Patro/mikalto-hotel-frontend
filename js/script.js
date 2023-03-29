@@ -130,7 +130,8 @@ async function fetchBannerData() {
     fetchBannerData();
 })()
 
-submitBtn.addEventlistener('click', () => {
+submitBtn.addEventListener('click', (e) => {
+    e.preventDefault()
     if (form.checkin.value.length > 0 && form.checkout.value.length > 0 && form.adult.value.length > 0 && form.child.value.length > 0) {
         fetch("http://localhost:8081/", {
             method: "POST",
@@ -139,7 +140,7 @@ submitBtn.addEventlistener('click', () => {
             },
             body: `id=${Date.now()}&checkin=${form.checkin.value}&checkout=${form.checkout.value}&adult=${form.adult.value}&child=${form.child.value}`,
         }).then((res) => {
-            console.log(res.json());
+            // console.log(res.json());
         })
     }
     else {
