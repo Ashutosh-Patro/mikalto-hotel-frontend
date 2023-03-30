@@ -9,6 +9,7 @@ const activityData = document.querySelector('#activities')
 const reconnectNature = document.querySelector('#reconnect-nature')
 const banner = document.querySelector('#banner')
 const submitBtn = document.querySelector('.submit')
+const carouselRoomDetails = document.querySelectorAll('.carousel-rooms div')
 
 function dropdown() {
     crossIcon.classList.toggle('hidden')
@@ -47,14 +48,8 @@ async function fetchCards() {
     }).then((res) => {
         experienceItem.forEach((item, index) => {
             item.querySelector('.experience-image').setAttribute('src', `${res.experienceObj[index].imageURL}`)
-        })
-        experienceItem.forEach((item, index) => {
             item.querySelector('.sub-heading').textContent = `${res.experienceObj[index].cardSubHeading}`
-        })
-        experienceItem.forEach((item, index) => {
             item.querySelector('.heading').textContent = `${res.experienceObj[index].cardHeading}`
-        })
-        experienceItem.forEach((item, index) => {
             item.querySelector('.content').textContent = `${res.experienceObj[index].cardContent}`
         })
     })
@@ -66,20 +61,10 @@ async function fetchReviews() {
     }).then((res) => {
         reviewItem.forEach((item, index) => {
             item.querySelector('.review-image').setAttribute('src', `${res.reviewsObj[index].profileImage}`)
-        })
-        reviewItem.forEach((item, index) => {
             item.querySelector('.review-name').textContent = `${res.reviewsObj[index].name}`
-        })
-        reviewItem.forEach((item, index) => {
             item.querySelector('.review-date').textContent = `${res.reviewsObj[index].date}`
-        })
-        reviewItem.forEach((item, index) => {
             item.querySelector('.review-default-image').setAttribute('src', `${res.reviewsObj[index].profileLogo}`)
-        })
-        reviewItem.forEach((item, index) => {
             item.querySelector('.review-heading').textContent = `${res.reviewsObj[index].reviewHead}`
-        })
-        reviewItem.forEach((item, index) => {
             item.querySelector('.review-content').textContent = `${res.reviewsObj[index].reviewContent}`
         })
     })
@@ -122,12 +107,38 @@ async function fetchBannerData() {
     })
 }
 
+async function fetchCarouselData() {
+    await fetch('http://localhost:8081/carousel').then((data) => {
+        return data.json();
+    }).then((res) => {
+        carouselRoomDetails.forEach((item, index) => {
+            item.querySelector('.room-sub-heading').textContent = `${res.carouselObj[index].subHeading}`
+            item.querySelector('.room-detail').textContent = `${res.carouselObj[index].description}`
+            item.querySelector('.room-rate').textContent = `${res.carouselObj[index].rate}`
+            item.querySelector('.room-heading').textContent = `${res.carouselObj[index].heading}`
+            item.querySelectorAll('.room-detail-content .room-specifications-bed').forEach((item) => {
+                item.textContent = `${res.carouselObj[index].bed}`
+            })
+            item.querySelectorAll('.room-detail-content .room-specifications-people').forEach((item) => {
+                item.textContent = `${res.carouselObj[index].capacity}`
+            })
+            item.querySelectorAll('.room-detail-content .room-specifications-area').forEach((item, i) => {
+                item.textContent = `${res.carouselObj[index].roomSize}`
+            })
+            item.querySelectorAll('.room-detail-content .room-specifications-view').forEach((item, i) => {
+                item.textContent = `${res.carouselObj[index].view}`
+            })
+        })
+    })
+}
+
 (() => {
     fetchCards();
     fetchReviews();
     fetchActivities();
     fetchReconnectNature();
     fetchBannerData();
+    fetchCarouselData();
 })()
 
 submitBtn.addEventListener('click', (e) => {
